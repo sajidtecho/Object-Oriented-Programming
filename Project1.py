@@ -47,6 +47,25 @@ class chatbook:
                 print("Invalid credentials. Please try again.")
             print("\n")
             self.menu()
+            
+    def write_post(self):
+        if self.loggin_status==True:
+            post=input("Write your post: ")
+            print("Post published:", post)
+        else:
+            print("Please log in to write a post.")
+        print("\n")
+        self.menu()
+        
+    def message_friend(self):
+        if self.loggin_status==True:
+            friend=input("Enter your friend's name: ")
+            message=input("Enter your message: ")
+            print(f"Message sent to {friend}: {message}")
+        else:
+            print("Please log in to message a friend.")
+        print("\n")
+        self.menu()
 
     
 obj=chatbook()
