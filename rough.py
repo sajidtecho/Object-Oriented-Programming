@@ -12,7 +12,18 @@ my_int=42
 
 # print(a+b)  # Output: xy
 
-from Project1 import chatbook   
 
-user1=chatbook()
+#example of modular programming using OOP"
+# from operator import le
+
+
+
+# lst=[1,2,3,4,5]
+# #function
+# length=len(lst)
+# print(length)
     
+    
+from Project1 import chatbook  
+user1=chatbook()
+user1.menu() 
