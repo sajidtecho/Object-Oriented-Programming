@@ -26,7 +26,28 @@ class chatbook:
         else:
             print("Thank you for using Chatbook. Goodbye!")
             exit()
-         
+     
+    def sign_up(self):
+        self.username=input("Enter your username: ")
+        self.password=input("Enter your password: ")
+        print("Sign Up successful! Please log in.")
+        print("\n")
+        self.menu()  
+    
+    def log_in(self):
+        if self.username=="" or self.password=="":
+            print("No user found. Please sign up first.")
+        else:
+            username=input("Enter your username: ")
+            password=input("Enter your password: ")
+            if self.username==username and self.password==password:
+                self.loggin_status=True
+                print("Log In successful!")
+            else:
+                print("Invalid credentials. Please try again.")
+            print("\n")
+            self.menu()
+
     
 obj=chatbook()
          
