@@ -26,4 +26,4 @@ my_int=42
     
 from Project1 import chatbook  
 user1=chatbook()
-user1.menu() 
+print(user1.name) 
